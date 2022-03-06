@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Basic Javascript</title>
+    <script type="text/javascript">
+        var isim = "Simge İrem IŞIK";
+        //alert(isim);
+        console.log(isim);
+        topla(10, 7);
+        var carpim = carp(5, 6);
+        console.log(carpim);
+        function topla(no1, no2) {
+            console.log("Topla: " + (no1 + no2));
+        }
+        function carp(no1, no2) {
+            return no1 * no2;
+        }
+    </script>
+    <script>
+        //undefined
+
+        var sayi1 = 1;
+        var sayi2 = 2;
+
+        var sonuc = hangisiBuyuk(1, 1);
+
+        if (sonuc == null) {
+            console.log("İki sayı birbirine eşit.");
+        }
+        else {
+            console.log(sonuc + " daha büyük.");
+        }
+
+        function hangisiBuyuk(n1, n2) {
+            if (n1 != n2) { //if (n1 !== n2)
+                if (n1 > n2) {
+                    return n1;
+                }
+                else if (n2 > n1) {
+                    return n2;
+                }
+            }
+            else { // if (n1 == n2), if (n1 === n2)
+                return null;
+            }
+        }
+
+    </script>
+    <script src="04_BasicJavaScript.js"></script>
+    <script>
+        ucgenDoldur();
+    </script>
+</head>
+<body onload="onLoadIleDoldur();">
+    <textarea id="mytextareaid" rows="10" cold="50"></textarea>
+    <br />
+    <button onclick="onClickIleDoldur();">Üçgen Doldur</button>
+</body>
+</html>

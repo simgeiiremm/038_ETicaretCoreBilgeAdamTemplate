@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Basic CSS</title>
+    <style>
+        label { 
+            /*Internal CSS*/
+            color: darkslateblue;
+            font-size: 14px;
+        }        
+    </style>
+    <link href="03_BasicCss.css" rel="stylesheet" />
+</head>
+<body>
+    <!--Inline CSS-->
+    <h1 style="color:mediumpurple;font-size:large;font-weight:bold;font-style:italic;border:ridge;
+    border-width:10px;background-color:pink;text-align:center;">My Styled Header</h1>
+    <label>My First Label</label>
+    <br />
+    <label>My Second Label</label>
+    <br />
+    <label class="mylabelclass">My Third Label</label>
+    <hr class="style-eight"/>
+    <input type="text" class="myinputclass"/>
+    <br />
+    <br />
+    <div id="mydivid"><span>I am a Sheltie</span></div>
+    <br />
+    <a class="myaclass" href="https://bilgeadam.com" target="_parent">Bilge Adam</a>
+</body>
+</html>
